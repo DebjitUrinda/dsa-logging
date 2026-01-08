@@ -1,0 +1,2 @@
+## Pair with given sum in a sorted array:
+Why two pointer in different direction and not the same direction:
