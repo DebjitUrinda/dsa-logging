@@ -1,5 +1,5 @@
 ## 9th Jan 2026
-### Pair with given sum in a sorted array:
+### 1. Pair with given sum in a sorted array:
 _Why two pointer in different direction and not the same direction:_
 **Problem Type**:
 Two pointers (opposite direction)
@@ -59,4 +59,4 @@ k * (k - 1) / 2
 Done — break the loop
 
 
-Time spent: 
+Time spent: 2 hours
