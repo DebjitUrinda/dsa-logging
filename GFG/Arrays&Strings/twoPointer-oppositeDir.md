@@ -61,3 +61,22 @@ Done — break the loop
 
 Time spent: 2 hours
 Similar problems: Reverse array in groups
+
+
+### 2. Trapping Rain Water:
+_Why two pointer in different direction and not the same direction:_
+**Problem Type**:
+Two pointers (opposite direction)
+Pointer movement is invariant-driven, not comparison driven.
+
+**Invariants**:
+Core Invariant: The side with the smaller max boundary can be safely resolved.
+
+**Mistakes I made**:
+1. Thought of two pointers in same direction given the array: [3, 0, 1, 0, 4, 0 2]. But it will fail if array is [5, 2, 1, 0, 4]
+
+**Formula grounding the solution:**
+water[i] = min(max_left, max_right) - height
+
+
+Time spent: 40 mins
