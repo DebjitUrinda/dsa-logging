@@ -79,4 +79,5 @@ Core Invariant: The side with the smaller max boundary can be safely resolved.
 water[i] = min(max_left, max_right) - height
 
 
-Time spent: 40 mins
+Time spent: 50 mins
+Revise this from the chat in ChatGPT, go over the mistakes and the max boundary part
