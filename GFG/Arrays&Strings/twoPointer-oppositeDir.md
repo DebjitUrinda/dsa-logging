@@ -81,3 +81,6 @@ water[i] = min(max_left, max_right) - height
 
 Time spent: 50 mins
 Revise this from the chat in ChatGPT, go over the mistakes and the max boundary part
+
+
+### 3. Max Sum Subarray of size K:
