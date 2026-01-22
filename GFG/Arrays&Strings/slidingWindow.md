@@ -8,7 +8,7 @@ Why brute-force first:
 - Clarifies window boundaries
 - Removes ambiguity about "first"
 - Acts as ground truth for optimized solutions
-#### Brute Force 
+### Brute Force 
         negArr = []
         
         for i in range(0, len(arr)-k+1):
