@@ -1,5 +1,6 @@
-### First Negative in Every Window (Baseline)
+### 1. First Negative in Every Window 
 
+(Baseline)
 - Implemented brute-force solution (O(n*k))
 - Focused on correctness and clarity
 - Explicitly scans each window and stops at first negative
@@ -57,3 +58,6 @@ Space: O(n)
 
 Lesson
 Sliding window optimization works by remembering candidates and discarding them only when they exit the window.
+
+
+### 2. Count Occurrences of Anagrams
