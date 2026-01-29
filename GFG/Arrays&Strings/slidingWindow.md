@@ -61,3 +61,48 @@ Sliding window optimization works by remembering candidates and discarding them 
 
 
 ### 2. Count Occurrences of Anagrams
+
+##### Problem Statement
+Given a string txt and a pattern string pat, count how many substrings of txt are anagrams of pat.
+
+An anagram means:
+Same characters
+Same frequency
+Order does not matter
+
+##### Core Idea
+This problem is solved using the Sliding Window technique with fixed window size.
+Key observations:
+Only contiguous substrings are considered
+Anagram checking depends on character frequency, not order
+The window size is always len(pat)
+Instead of recomputing frequencies for every substring, we:
+Build frequency data once
+Slide the window
+Update only the characters that enter and leave the window
+
+##### Why No Dictionary?
+The constraints specify:
+Only lowercase English letters
+So we use:
+A fixed-size array of length 26
+Each index represents a character (a → z)
+This gives:
+Faster access than dictionaries
+Constant space complexity
+
+##### Algorithm Steps
+1. Edge Case Check
+If len(pat) > len(txt), return 0
+2. Initialize
+patCount[26] → frequency of characters in pat
+windowCount[26] → frequency of characters in current window
+3. Build First Window
+Populate windowCount using the first k = len(pat) characters
+4. Compare First Window
+If windowCount == patCount, increment result
+5. Slide the Window
+Remove the leftmost character
+Add the next character on the right
+Compare again
+6. Repeat until the end of txt
