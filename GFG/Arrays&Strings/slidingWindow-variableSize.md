@@ -4,7 +4,7 @@
 
 ### Length of the longest substring (without repeating characters)
 Problem statement: https://www.geeksforgeeks.org/problems/length-of-the-longest-substring3036/1
-* Fundamental mistake with concept:
+* Fundamental mistake with concept (not updating the asci array properly):
 
         alfabts = [0]*26
         result = s[0]
