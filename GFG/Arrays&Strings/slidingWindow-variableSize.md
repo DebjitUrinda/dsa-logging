@@ -5,10 +5,10 @@
 ### Length of the longest substring (without repeating characters)
 Problem statement: https://www.geeksforgeeks.org/problems/length-of-the-longest-substring3036/1
 * Fundamental mistake with concept:
+
         alfabts = [0]*26
         result = s[0]
         # lt = 0
-        
         for i in range(1, len(s)):
             asci = ord(s[i]) - 97
             if alfabts[asci] == 0:
