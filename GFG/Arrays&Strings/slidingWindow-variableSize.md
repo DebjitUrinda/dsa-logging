@@ -27,7 +27,9 @@ REASON:
 4. I didn’t enforce the invariant = The rule was: window must contain unique characters. When the rule broke, I didn’t fix the window — I replaced it.
 
 
-* 3rd attempt (maitaining a window, while keeping the history intact about previously visited character -> it should never exceed count value = 1):
+* 3rd attempt - SUCCEEDED
+  (maitaining a window, while keeping the history intact about previously visited character -> it should never exceed count value = 1):
+
         alfabts = [0]*26
         result = 0
         lt = 0
