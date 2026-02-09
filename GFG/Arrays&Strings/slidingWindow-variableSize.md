@@ -1,3 +1,12 @@
+### Smallest window containing all characters
+* Genius problem (https://www.geeksforgeeks.org/problems/smallest-window-in-a-string-containing-all-the-characters-of-another-string-1587115621/1)
+  Problem to find the smallest substring in s consisting of all the characters (including duplicates) of the string p. Return empty string in case no such substring is present. If there are multiple such substring of the same length found, return the one with the least starting index.
+
+  e.g. Input: s = "timetopractice", p = "toc"
+       Output: "toprac"
+       Explanation: "toprac" is the smallest substring in which "toc" can be found.
+
+
 ### Longest Subarray with Sum K (positive)
 * Mistake: 
   Apparently Sliding window only works for positive numbers, now the question is why did I not think of this question that I am working with an unsolvable method. The GFG problem I was working on (https://www.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1) includes negative number and ther only hashmap and indexing would work.
