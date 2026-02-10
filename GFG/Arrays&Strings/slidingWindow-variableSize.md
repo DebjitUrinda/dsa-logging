@@ -6,6 +6,12 @@
        Output: "toprac"
        Explanation: "toprac" is the smallest substring in which "toc" can be found.
 
+##### Invariant == Window is valid if it contains all characters of p with their required frequencies.
+So:
+  * Define Validity: Clearly state when the window is valid v/s invalid
+  * Encode Validity as a number: Track validity as a scalar (formed, matched, violations), not structures
+  * Expand -> then repair: Always expand right, and shrink left to restore validity
+  * Update answer only at the boundary: _Longest -> after expand right_ | _Smallest -> after shrink left_
 
 ### Longest Subarray with Sum K (positive)
 * Mistake: 
