@@ -7,7 +7,6 @@
 Find sum of elements from index 1 to 3.
 Original array:
 [2, 4, 1, 3]
-   ↑     ↑
 That means:
 4 + 1 + 3 = 8
 Now look at prefix:
