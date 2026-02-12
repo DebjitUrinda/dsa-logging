@@ -12,3 +12,8 @@ That means:
 4 + 1 + 3 = 8
 Now look at prefix:
 [2, 6, 7, 10]
+
+
+#### Range Sum Query – Immutable (https://leetcode.com/problems/range-sum-query-immutable/description/)
+* ##### Invariant:
+  
