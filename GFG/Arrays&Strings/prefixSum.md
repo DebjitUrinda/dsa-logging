@@ -29,3 +29,7 @@ Now look at prefix:
         if left == 0:
             return self.prefixSum[right]
         return self.prefixSum[right] - self.prefixSum[left-1]
+
+#### Equilibrium Point (https://www.geeksforgeeks.org/problems/equilibrium-point-1587115620/1)
+* ##### Invariant:
+  
