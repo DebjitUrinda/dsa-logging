@@ -1,1 +1,3 @@
 Invariant: store history of states
+
+### Subarray with 0 sum (https://www.geeksforgeeks.org/problems/subarray-with-0-sum-1587115621/1)
