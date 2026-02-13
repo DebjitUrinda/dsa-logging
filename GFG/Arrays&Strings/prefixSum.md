@@ -30,6 +30,6 @@ Now look at prefix:
             return self.prefixSum[right]
         return self.prefixSum[right] - self.prefixSum[left-1]
 
-#### Subarray Sum Equals K (https://www.geeksforgeeks.org/problems/equilibrium-point-1587115620/1](https://leetcode.com/problems/subarray-sum-equals-k/description/)
+#### Subarray Sum Equals K (https://leetcode.com/problems/subarray-sum-equals-k/description/)
 * ##### Invariant:
   
