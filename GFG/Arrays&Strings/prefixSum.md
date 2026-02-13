@@ -32,4 +32,21 @@ Now look at prefix:
 
 #### Subarray Sum Equals K (https://leetcode.com/problems/subarray-sum-equals-k/description/)
 * ##### Invariant:
-  
+  1. curr_sum always equals sum of elements from start to current index.
+  2. The hashmap always stores counts of all previous prefix sums.
+
+class Solution:
+    def subarraySum(self, nums: List[int], k: int) -> int:
+        freq = {0:1}
+        curr_sum = 0
+        count = 0 
+
+        for i in nums:
+            curr_sum += i
+
+            if curr_sum - k in freq:
+                count += freq[curr_sum - k]
+        
+            freq[curr_sum] = freq.get(curr_sum, 0) + 1
+
+        return count
