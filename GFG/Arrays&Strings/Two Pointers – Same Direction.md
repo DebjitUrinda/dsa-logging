@@ -23,3 +23,23 @@ Also noted in-place two-pointer variant for optimal space.
 Sorted array ⇒ duplicates are adjacent.
 Only compare current element with previous element.
 No extra memory structures needed.
+
+
+### q2. Move all Zeroes to End of Array (https://www.geeksforgeeks.org/problems/move-all-zeroes-to-end-of-array0751/1)
+refactor: replace incorrect zero-shifting attempts with stable two-pointer invariant
+
+Previous attempts:
+- Used adjacent swaps (bubble-style) based on arr[i-1] == 0
+  → Inefficient movement of zeroes (one step at a time)
+  → No clear invariant for `slow`
+  → Conceptually unstable logic
+
+- Tried reverse traversal pushing zeros from end
+  → Broke relative order of non-zero elements
+  → Violated problem stability requirement
+
+Final solution:
+- Implemented fast/slow pointer pattern
+- Invariant: [0..slow) always contains non-zero elements in original order
+- Single pass, O(n) time, O(1) space
+- Maintains stability correctly
