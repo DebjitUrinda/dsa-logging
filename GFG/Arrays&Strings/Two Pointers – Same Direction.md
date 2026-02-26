@@ -1,7 +1,7 @@
 ## Invariant: slow = last valid index, fast = scanner
 
 ### q1. Remove Duplicates Sorted Array (https://www.geeksforgeeks.org/problems/remove-duplicate-elements-from-sorted-array/1)
-Initial attempt used a slow pointer and a separate list but had two issues:
+Initial attempt used a slow pointer and a separate list but had two issues: (look at the Gfg submissions)
 
 1. `uniq` was incorrectly initialized as an integer instead of a list.
 2. Logic was more complex than necessary for a sorted array.
