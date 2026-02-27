@@ -16,7 +16,7 @@ Initial Approach Issues
   The window was shrunk only once when a duplicate was detected.
   This failed in cases where multiple removals were required to restore validity.
     Violated the invariant:
-&emspAll characters inside the window must have frequency ≤ 1.  
+&emsp All characters inside the window must have frequency ≤ 1.  
 Incorrect frequency decrement  
   Used counter[left] -= 1
   This incorrectly treated left as a character index (0–25).
