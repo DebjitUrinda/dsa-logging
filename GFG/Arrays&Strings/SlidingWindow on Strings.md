@@ -16,17 +16,17 @@ Initial Approach Issues
   The window was shrunk only once when a duplicate was detected.
   This failed in cases where multiple removals were required to restore validity.
     Violated the invariant:
-      All characters inside the window must have frequency ≤ 1.
+      All characters inside the window must have frequency ≤ 1.  
 Incorrect frequency decrement  
   Used counter[left] -= 1
   This incorrectly treated left as a character index (0–25).
   Correct approach requires:
     ch = ord(s[left]) - ord('a')
-    counter[ch] -= 1
+    counter[ch] -= 1  
 Updated max length during invalid window  
   Length was computed inside the shrinking loop.
   This measured substrings while the window was still invalid.
-  Sliding window requires measuring only after invariant restoration.
+  Sliding window requires measuring only after invariant restoration.  
 Unnecessary substring slicing  
   Used temp = s[left:i]
   This introduced unnecessary O(n) operations.
