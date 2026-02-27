@@ -16,13 +16,13 @@ Initial Approach Issues
   The window was shrunk only once when a duplicate was detected.
   This failed in cases where multiple removals were required to restore validity.
     Violated the invariant:
-      All characters inside the window must have frequency ≤ 1.  
+&emspAll characters inside the window must have frequency ≤ 1.  
 Incorrect frequency decrement  
   Used counter[left] -= 1
   This incorrectly treated left as a character index (0–25).
   Correct approach requires:
-    ch = ord(s[left]) - ord('a')
-    counter[ch] -= 1  
+&emspch = ord(s[left]) - ord('a')
+&emspcounter[ch] -= 1  
 Updated max length during invalid window  
   Length was computed inside the shrinking loop.
   This measured substrings while the window was still invalid.
