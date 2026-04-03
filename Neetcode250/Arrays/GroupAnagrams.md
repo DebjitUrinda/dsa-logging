@@ -10,3 +10,6 @@ Grouping problems,
 Hashing tricks,
 Frequency counting,
 Data normalization
+
+Errors:
+1. TypeError: cannot use 'list' as a dict key (unhashable type: 'list')
