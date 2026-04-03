@@ -13,3 +13,10 @@ Data normalization
 
 Errors:
 1. TypeError: cannot use 'list' as a dict key (unhashable type: 'list')
+2. binary_arr = [0]*26
+        hashMap = {}
+        for word in strs:
+            for ch in word:
+                i = ord(ch) - 97
+                binary_arr[i] += 1
+                hashMap[binary_arr] = word
