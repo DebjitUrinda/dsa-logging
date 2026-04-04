@@ -21,9 +21,9 @@ So you're forced into:
 🧠 What this problem is really testing
 1. Do you know core sorting algorithms?
 You should recognize:
-Merge Sort: Time: O(n log n) ✅; Space: O(n) ❌ (extra array)
-Quick Sort: Time: O(n log n) average ✅; Space: O(log n) (recursion) ✅; In-place ✅
-Heap Sort: Time: O(n log n) ✅; Space: O(1) ✅; Harder to implement
+1. Merge Sort: Time: O(n log n) ✅; Space: O(n) ❌ (extra array)
+2. Quick Sort: Time: O(n log n) average ✅; Space: O(log n) (recursion) ✅; In-place ✅
+3. Heap Sort: Time: O(n log n) ✅; Space: O(1) ✅; Harder to implement
 
 Edge cases:
 
