@@ -8,4 +8,4 @@ Return true if the Sudoku board is valid, otherwise return false
 
 Note: A board does not need to be full or be solvable to be valid.
 
-========================================================================================================
+==============================================================================
