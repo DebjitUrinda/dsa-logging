@@ -33,7 +33,27 @@ Edge cases:
 
 Verbal explanation:
 
+Create three separate tracking structures:
+one for rows
+one for columns
+and one for the 3×3 boxes
+
+using - 
+rows = [set() for _ in range(9)] cols = [set() for _ in range(9)] boxes = [set() for _ in range(9)]
+
+for example:
+rows[0] tracks numbers in row 0 through set in 0th position
+cols[3] tracks numbers in column 3 through set in 3rd position
+boxes[5] tracks numbers in the 6th 3×3 box through set in 5th position
+
+why not hashmap?
+I just want a clean existence check, not:
+1. counting ❌
+OR
+2. storing extra info ❌
 
 ==============================================================================
 
-My approach:
+Approach:
+
+Key Idea is to use 
