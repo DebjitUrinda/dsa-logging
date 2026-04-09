@@ -51,7 +51,7 @@ Cleaner model:
         count = 0
         elem = None
 
-        for i in range(1,len(nums)):
+        for i in range(len(nums)):
             # print("loop start:", count)
             if count == 0:
                 elem = nums[i]
