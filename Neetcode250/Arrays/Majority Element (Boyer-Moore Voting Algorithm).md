@@ -12,7 +12,7 @@ Since majority > n/2: It will still remain at the end
 🎯 So the real problem is: “Can you identify the element that remains after maximum possible cancellations?”
 🔥 Why is this powerful?
 Because: You don’t need sorting, You don’t need hashmap, You don’t need extra space
-👉 This leads to Boyer-Moore Voting Algorithm
+👉 This leads to *Boyer-Moore Voting Algorithm*
 🧠 Intuition of optimal solution
    Maintain:
     candidate
