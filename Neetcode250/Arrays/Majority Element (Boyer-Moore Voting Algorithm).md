@@ -3,7 +3,9 @@ Given an array nums of size n, return the majority element.
 The majority element is the element that appears more than ⌊n / 2⌋ times in the array. 
 You may assume that the majority element always exists in the array.
 
-Boyer-Moore Voting Algorithm:
+===============================================
+
+#### Boyer-Moore Voting Algorithm:
 Cancellation idea (this is the core)
 Pair up: One majority element, One non-majority element. They cancel each other.
 Since majority > n/2: It will still remain at the end
