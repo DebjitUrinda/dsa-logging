@@ -9,6 +9,7 @@ The order of the elements which are not equal to val does not matter.
 It is not necessary to consider elements beyond the first k positions of the array.
 To be accepted, the first k elements of nums must contain only elements not equal to val.
 Return k as the final result.
+
 ==========================================================
 
 🧠 What are we actually trying to solve?
