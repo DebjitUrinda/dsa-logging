@@ -38,6 +38,7 @@ My Approach:
                 else:
                     result += self.matrix[i][col2]
 
+        return result
 
 The code had an issue that prevented it from working correctly:
 - Time Complexity: While the logic now correctly calculates the sum using row-level prefix sums, it currently runs in O(R) time (where R is the number of rows).
