@@ -54,7 +54,7 @@ My current approach:
 
   What I did:
   
-    You chose every element and searched backward:
+    I chose every element and searched backward:
       while search - 1 in hashSet
 
     Implicit idea:
