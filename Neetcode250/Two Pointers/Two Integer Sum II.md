@@ -27,7 +27,7 @@ Without sorting, moving pointers would be blind guessing.
 #### Invairant:
 My thought: 
 keep changing the pointers until the sum target is met inside
-That is closer to a process description, not a precise invariant.
+(That is closer to a process description, not a precise invariant.)
 
 #### Clear invariant:
 At every step:
