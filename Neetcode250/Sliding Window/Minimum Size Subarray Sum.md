@@ -3,7 +3,7 @@ You are given an array of positive integers nums and a positive integer target, 
 
 A subarray is a contiguous non-empty sequence of elements within an array.
 
-==========================================================================================
+========================================================================================
 
 **INVARIANT**
 #### My Invariant:
@@ -12,7 +12,7 @@ After each iteration, evaluate for the valid window, start by increasing the siz
 #### Crisp Invariant:
 After each iteration, the current window contains the current subarray sum, and whenever the window becomes valid (window_sum >= target), we shrink it from the left as much as possible while preserving validity.
 
-==========================================================================================
+========================================================================================
 
 ### Solution:
 **My incorrect version**:
